@@ -8,8 +8,7 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged",
-    "postinstall": "npx jetify"
+    "precommit": "lint-staged"
   },
   "lint-staged": {
     "*.{js,json}": ["prettier --write", "git add"]
