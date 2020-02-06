@@ -8,7 +8,8 @@
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
+    "precommit": "lint-staged",
+    "postinstall": "npx jetify"
   },
   "lint-staged": {
     "*.{js,json}": ["prettier --write", "git add"]
@@ -18,6 +19,7 @@
     "babel-eslint": "8.2.3",
     "eslint": "4.19.1",
     "husky": "0.14.3",
+    "jetifier": "1.6.5",
     "lint-staged": "7.0.5",
     "prettier": "1.12.1"
   },
